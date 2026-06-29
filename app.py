@@ -505,6 +505,7 @@ class linkedin_scraper:
     def webdriver_setup():
             
         options = webdriver.ChromeOptions()
+        options.binary_location = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
         options.add_argument('--headless')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
